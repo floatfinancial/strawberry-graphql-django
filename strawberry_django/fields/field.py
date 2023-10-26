@@ -439,7 +439,7 @@ def field(
 
 @overload
 def field(
-    resolver: StrawberryResolver | Callable | staticmethod | classmethod,
+    resolver: StrawberryResolver[object] | Callable | staticmethod | classmethod,
     *,
     field_cls: type[StrawberryDjangoField] = StrawberryDjangoField,
     name: str | None = None,
